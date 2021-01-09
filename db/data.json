@@ -1,0 +1,35 @@
+{
+  "courses": [
+    {
+      "coursename": "CS211  - Concepts of Programming Languages",
+      "crn": "65894",
+      "fbLink": "www.facebook.com/mustcs211"
+    },
+    {
+      "coursename": "CS210  - Object Oriented Programming",
+      "crn": "65890",
+      "fbLink": "www.facebook.com/mustcs211"
+    },
+    {
+      "coursename": "Maths 241",
+      "crn": "125689",
+      "fbLink": "facebook.com/mustmaths241"
+    },
+    {
+      "coursename": "testing",
+      "crn": "45136",
+      "fbLink": "facebook.com/testing"
+    },
+    {
+      "coursename": "MATH101",
+      "crn": "97752",
+      "fbLink": "facebook.com/math101"
+    },
+    {
+      "coursename": "English 201",
+      "crn": "12568",
+      "fbLink": "facebook.com/english201"
+    }
+    
+]
+}

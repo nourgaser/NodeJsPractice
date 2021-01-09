@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(145, 145, 145);
+    color: white;
+}
+
+#mainDiv {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.courseInputField {
+    background-color: black;
+    color: white;
+    width: 250px;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200)
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+form {
+    background-color: rgb(200, 200, 200);
+    padding: 5%;
+    margin: 5%;
+    align-self: auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#allCoursesButton {
+    width: 110px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-top: 150px;
+    text-align: center;
+    filter: drop-shadow(4px 4px 5px #000000);
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#allCoursesButton:hover {
+    transition: width 50ms, height 50ms;
+    width: 120px;
+    height: 26px;
+    font-size: large;
+}

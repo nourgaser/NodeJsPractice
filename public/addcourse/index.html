@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+
+<body>
+    <div id="allCoursesButton"><h3><a href="../allcourses/index.html">All Courses</a></h3></div>
+    <div id="mainDiv">
+    <form>
+        <input type="text" id="courseNameInput" placeholder="Course Name"class="courseInputField"><br>
+        <input type="number" id="courseCRNInput" placeholder="Course CRN"class="courseInputField"><br>
+        <input type="url" id="courseFBLinkInput" placeholder="Course Facebook Link" class="courseInputField"><br>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    </div>
+    <div id="message"></div>
+
+    <script>
+
+        document.getElementById("submit").addEventListener("click", (e) => {
+            e.preventDefault();
+            let data = {
+                coursename: document.getElementById('courseNameInput').value,
+                crn: document.getElementById('courseCRNInput').value,
+                fbLink: document.getElementById('courseFBLinkInput').value
+            };
+            fetch('/adddata', {
+                method: "POST",
+                mode: "cors",
+                headers: {
+                    "Content-Type": 'application/json'
+                },
+                body: JSON.stringify(data)
+            }
+            ).then(response => response.json()).then(data => {
+                document.getElementById("message").innerHTML = data.message;
+            })
+        })
+
+
+    </script>
+
+</body>
+
+</html>
